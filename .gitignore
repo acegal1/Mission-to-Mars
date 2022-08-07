@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+Practice.ipynb
+Practice2.ipynb
+Practice_Books.ipynb
+
 
 # C extensions
 *.so
