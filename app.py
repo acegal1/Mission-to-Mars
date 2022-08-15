@@ -1,6 +1,4 @@
-# Use Flask to Create a Web App
-#Activate python environment & Start Mongodb & mongo before running script.  
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
 import scraping
 
@@ -25,7 +23,7 @@ def scrape():
    mars.update_one({}, {"$set":mars_data}, upsert=True)
    return redirect('/', code=302)
 #gathered new data
-   .update_one(query_parameter, {"$set": data}, options)
+
 #Flask is to tell it to run.
-   if __name__ == "__main__":
+if __name__ == "__main__":
    app.run()
